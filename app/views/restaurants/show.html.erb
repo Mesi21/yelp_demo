@@ -3,8 +3,8 @@
 <%= render @restaurant %>
 
 <div>
-  <%= link_to "Edit this restaurant", edit_restaurant_path(@restaurant) %> |
-  <%= link_to "Back to restaurants", restaurants_path %>
+  <%= link_to "Edit", edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
+  <%= link_to "Back", restaurants_path, class: "btn btn-link" %>
 
-  <%= button_to "Destroy this restaurant", @restaurant, method: :delete %>
+  <%= button_to "Destroy this restaurant", @restaurant, method: :delete, class: "btn btn-link" %>
 </div>
