@@ -46,6 +46,7 @@ gem 'cssbundling-rails'
 gem 'jquery-rails', '~> 4.4'
 gem 'carrierwave'
 gem 'figaro'
+gem "mini_magick"
 # Use Sass to process CSS
 # gem "sassc-rails"
 
