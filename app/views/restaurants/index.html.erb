@@ -14,7 +14,12 @@
     </thead>
     <tbody>
       <% @restaurants.each do |restaurant| %>
-        <tr><%= render restaurant %></tr>
+        <tr>
+          <%= render restaurant %>
+          <td><%= link_to 'Show', restaurant, class: "btn btn-link" %></td>
+          <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-link" %></td>
+          <td><%= link_to 'Destroy', method: :delete, class: "btn btn-link", data: {confirm: 'Are you sure you want to delete it?'} %></td>
+        </tr>
       <% end %>
     </tbody>
   </table>
