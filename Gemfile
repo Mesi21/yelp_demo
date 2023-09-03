@@ -45,6 +45,7 @@ gem 'bootstrap', '~> 5.1'
 gem 'cssbundling-rails'
 gem 'jquery-rails', '~> 4.4'
 gem 'carrierwave'
+gem 'figaro'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
